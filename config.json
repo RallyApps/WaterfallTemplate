@@ -1,0 +1,12 @@
+{
+    "name": "Waterfall Template",
+    "className": "CustomApp",
+    "sdk": "2.0p2",
+    "javascript": [
+        "SetupState.js",
+        "App.js"
+    ],
+    "css": [
+        "app.css"
+    ]
+}
