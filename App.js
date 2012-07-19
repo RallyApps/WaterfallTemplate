@@ -137,6 +137,18 @@ Ext.define('CustomApp', {
 		return columns;
 	},
 
+	_setupComplete: function() {
+		Ext.Msg.show({
+			title:'Configuration Complete',
+			msg: 'Configuration of the Workspace is now complete.  This page will now reload with the selected process',
+			buttons: Ext.Msg.OK,
+			icon: Ext.Msg.QUESTION,
+			fn: function(btn) { window.location.reload() },
+			scope:this
+		});
+
+	}
+/*
 	_setupComplete:function() {
 		var columns = this._createColumns(this.setup.stateRecords);
 		var cardboard = Ext.widget('rallycardboard', {
@@ -157,4 +169,5 @@ Ext.define('CustomApp', {
 
 		this.add(cardboard);
 	}
+*/
 });
