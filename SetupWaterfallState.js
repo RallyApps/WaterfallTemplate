@@ -1,7 +1,7 @@
 /**
  * Assures that the states named and ordered as specified in the states array.
  */
-Ext.define('SetupState', {
+Ext.define('SetupWaterfallState', {
     extend: 'Ext.util.Observable',
     states:[
         "System Requirements",
